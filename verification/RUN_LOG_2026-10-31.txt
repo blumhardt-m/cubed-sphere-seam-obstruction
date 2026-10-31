@@ -1,0 +1,117 @@
+== proof-session checks (verbatim from the proof package) ==
+Ku h^0: 0
+Ku h^1: 0
+r h^0 (must be 0): 0
+r h^1 remainder outside U-basis (must be 0): 0
+  c1[U01] = e*(4*e**4 + 21*e**2 + 41)/(4*(e**2 + 2))
+  c1[U02] = -e**2/2 - 1
+  c1[U03] = e*(-e**4 - 4*e**2 - 4)/6
+  c1[U10] = e**2 + 2
+  c1[U11] = e*(e**2 + 2)
+  c1[U20] = e**2 + 2
+elapsed 3.6s
+c1 in Fermi basis (exact):
+  F01:  sqrt(2)*e*(47*e**2 + 139)/(12*(e**4 + 4*e**2 + 4))
+  F02:  (3*e**2 - 2)/(2*(e**2 + 2))
+  F03:  -sqrt(2)*e/(3*e**2 + 6)
+  F20:  1/2
+Delta at seam in F basis (should be F20+F02): F02 + F20
+odd-in-n coefficients (mirror-odd data): {'F10': '0', 'F11': '0', 'F12': '0', 'F30': '0'}
+c1 reduced on U0:
+  F01:  sqrt(2)*e*(47*e**2 + 139)/(12*(e**4 + 4*e**2 + 4))
+  F02:  (e**2 - 2)/(e**2 + 2)
+  F03:  -sqrt(2)*e/(3*e**2 + 6)
+omega*a = e*(47*e**2 + 139)/(12*sqrt(e**2 + 2)*(e**4 + 4*e**2 + 4))
+omega*b = sqrt(2)*(e**2 - 2)/(2*(e**2 + 2)**(3/2))
+omega*d = -e/(3*(e**2 + 2)**(3/2))
+G (conservation adjoint density) = sqrt(2)*(3*e**4 + 31*e**2 - 25)/(4*sqrt(e**2 + 2)*(e**4 + 4*e**2 + 4))
+omega*a - (omega*b)' = e*(6*e**4 - e**2 + 19)/(12*sqrt(e**2 + 2)*(e**4 + 4*e**2 + 4))
+0 {'G': '-25/16', 'G_float': -1.5625, 'omega_d': '0', 'omega_d_float': 0.0, 'M1': '0', 'M1_float': 0.0}
+1/2 {'G': '-91*sqrt(2)/162', 'G_float': -0.7944039146663682, 'omega_d': '-4/81', 'omega_d_float': -0.04938271604938271, 'M1': '17/162', 'M1_float': 0.10493827160493827}
+1 {'G': 'sqrt(6)/12', 'G_float': 0.2041241452319315, 'omega_d': '-sqrt(3)/27', 'omega_d_float': -0.06415002990995841, 'M1': '2*sqrt(3)/27', 'M1_float': 0.12830005981991682}
+1/4 {'G': '-1967*sqrt(66)/11979', 'G_float': -1.3339997948008127, 'omega_d': '-16*sqrt(33)/3267', 'omega_d_float': -0.02813376257869864, 'M1': '809*sqrt(33)/71874', 'M1_float': 0.06465969865388409}
+Ku h^0: 0  Ku h^1: 0
+r h^0 = -Ku_h2/s - lap: 0
+r h^1 = -Ku_h3/s: 0
+(i) e^2 bound on supp psi_A: 0.4243550753083515  3e^4+31e^2-25 at bound: -11.304760975621235  negative: True
+(ii) u: min(x,y) lower bound [0.49230090894704166465692998610188177, 0.4923009089470416646569299861022762]  > |z| upper bound [0.40776045305957018597278715808630642, 0.40776045305957018597278715808635573]: True
+(ii) v: min(x,y) lower bound [0.48353996703814860140057288845205508, 0.48353996703814860140057288845244951]  > |z| upper bound [0.43496553411123021042084424623184996, 0.43496553411123021042084424623194857]: True
+(iii) 6e^4-e^2+19 = 6(e^2-1/12)^2 + 19 - 1/24 > 0 for all real e: True
+== independent checks (review session, different derivation routes) ==
+W_b / h^2 = (e**2 + 2)**(-3/2)   (expect sqrt(g)(1,e) = (2+e^2)^(-3/2))
+Ku h^0 = 0
+Ku h^1 = 0
+r h^0 (consistency, must be 0) = 0
+
+c1 in PX jet basis:
+  U_eta         : e*(4*e**4 + 21*e**2 + 41)/(4*(e**2 + 2))
+  U_etaeta      : -(e**2 + 2)/2
+  U_etaetaeta   : -e*(e**2 + 2)**2/6
+  U_xi            : e**2 + 2
+  U_xieta         : e*(e**2 + 2)
+  U_xixi            : e**2 + 2
+
+c1 - published c1 = 0
+
+c1 in Fermi basis (route A):
+  F_t     : sqrt(2)*e*(47*e**2 + 139)/(12*(e**2 + 2)**2)
+  F_tt    : (3*e**2 - 2)/(2*(e**2 + 2))
+  F_ttt   : -sqrt(2)*e/(3*(e**2 + 2))
+  F_nn      : 1/2
+A - A_pub = 0
+B - B_pub = 0
+C_nn - 1/2 = 0
+D - D_pub = 0
+Delta at seam in Fermi basis (expect F20+F02): F02 + F20
+route B test: c1[u] (PX jets) - (A F_t + B F_tt + F_nn/2 + D F_ttt) = 0   [value 0.0489060347000448 ]
+route B test: c1[u] (PX jets) - (A F_t + B F_tt + F_nn/2 + D F_ttt) = 0   [value -0.0638932826779050 ]
+route B test: c1[u] (PX jets) - (A F_t + B F_tt + F_nn/2 + D F_ttt) = 0   [value -37.5435221095166 ]
+
+G = sqrt(2)*(3*e**4 + 31*e**2 - 25)/(4*sqrt(e**2 + 2)*(e**4 + 4*e**2 + 4))
+G - G_pub = 0 ; G(0) = -25/16
+omega*A - (omega*(B-1/2))' = e*(6*e**4 - e**2 + 19)/(12*(e**2 + 2)**(5/2))  [pub: e(6e^4-e^2+19)/(12(e^2+2)^(5/2))]
+omega*D = -e/(3*(e**2 + 2)**(3/2))
+Part A (Lemma 2): interior Ku h^0 = 0  Ku h^1 = 0  r h^0 = 0  r h^1 = 0
+Part A: interior h^2 density r2[U] (coefficient of each jet d_xi^p d_eta^q U at (xi0,eta0)):
+   (0,1): -eta0*(25*eta0**4 - 59*eta0**2*xi0**2 - 15*eta0**2 - 14*xi0**4 - 59*xi0**2 - 40)/(8*(eta0**2 + xi0**2 + 1)**2)
+   (0,2): (6*eta0**4 + 4*eta0**2*xi0**2 + 7*eta0**2 + xi0**4 + 2*xi0**2 + 1)/(2*(eta0**2 + xi0**2 + 1))
+   (0,3): eta0*(eta0**2 + xi0**2 + 1)/3
+   (0,4): (eta0**2 + 1)*(eta0**2 + xi0**2 + 1)/12
+   (1,0): xi0*(14*eta0**4 + 59*eta0**2*xi0**2 + 59*eta0**2 - 25*xi0**4 + 15*xi0**2 + 40)/(8*(eta0**2 + xi0**2 + 1)**2)
+   (1,1): -3*eta0*xi0*(eta0**2 + xi0**2 + 2)/(4*(eta0**2 + xi0**2 + 1))
+   (1,2): xi0*(xi0**2 + 1)/2
+   (1,3): eta0*xi0*(eta0**2 + xi0**2 + 1)/3
+   (2,0): (eta0**4 + 4*eta0**2*xi0**2 + 2*eta0**2 + 6*xi0**4 + 7*xi0**2 + 1)/(2*(eta0**2 + xi0**2 + 1))
+   (2,1): eta0*(eta0**2 + 1)/2
+   (3,0): xi0*(eta0**2 + xi0**2 + 1)/3
+   (3,1): eta0*xi0*(eta0**2 + xi0**2 + 1)/3
+   (4,0): (xi0**2 + 1)*(eta0**2 + xi0**2 + 1)/12
+[Part A done in 49s]
+Step A: Euler-Lagrange expression of sqrt(g) r2 = 0
+Step B: boundary coefficients b_m(eta) multiplying d_xi^m U at xi=1:
+   m=0: -(eta**4 + 3*eta**2 - 3)/(4*(eta**2 + 2)**(7/2))
+   m=1: (2*eta**4 + 9*eta**2 + 37)/(6*(eta**2 + 2)**(5/2))
+   m=2: (eta - 1)*(eta + 1)/(6*(eta**2 + 2)**(3/2))
+   m=3: 1/(6*sqrt(eta**2 + 2))
+Step C: seam density (per d eta) after U_0 reduction, coefficients of F-jets:
+   F_     : -(e**4 + 3*e**2 - 3)/(4*(e**2 + 2)**(7/2))
+   F_t    : -sqrt(2)*e*(2*e**4 + 6*e**2 + 45)/(12*(e**2 + 2)**(7/2))
+   F_tt   : -(e**2 - 7)/(6*(e**2 + 2)**(7/2))
+   F_ttt  : sqrt(2)*e*(e**2 + 3)/(12*(e**2 + 2)**(7/2))
+   F_n     : -sqrt(2)*(2*e**4 + 5*e**2 + 44)/(12*(e**2 + 2)**3)
+   F_nt    : e*(e**2 - 7)/(6*(e**2 + 2)**3)
+   F_ntt   : -sqrt(2)*(e - 1)*(e + 1)/(12*(e**2 + 2)**3)
+   odd-in-n jets surviving on PX (they change sign on PY by the x<->y mirror and cancel in the sum): [(1, 0), (1, 1), (1, 2)]
+
+PX boundary density against f (per dt): -sqrt(2)*(3*e**4 + 31*e**2 - 25)/(8*(e**2 + 2)**(5/2))
+E_inf density = -2 * that = sqrt(2)*(3*e**4 + 31*e**2 - 25)/(4*(e**2 + 2)**(5/2))
+published G                = sqrt(2)*(3*e**4 + 31*e**2 - 25)/(4*(e**2 + 2)**(5/2))
+difference (-2*Gtilde - G_pub) = 0
+
+Compare output/*.txt with expected_output/*.txt (timings excepted).
+
+real	1m32.968s
+user	1m30.394s
+sys	0m1.271s
+
+# Run log of verification/run_all.sh, 2026-10-31, Python 3.13.18, sympy 1.14.0, x86_64 Linux container. Wall time 1 m 33 s (see 'real' above). All six outputs matched expected_output/ apart from timing lines.

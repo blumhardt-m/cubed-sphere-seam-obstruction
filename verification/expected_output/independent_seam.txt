@@ -1,0 +1,33 @@
+W_b / h^2 = (e**2 + 2)**(-3/2)   (expect sqrt(g)(1,e) = (2+e^2)^(-3/2))
+Ku h^0 = 0
+Ku h^1 = 0
+r h^0 (consistency, must be 0) = 0
+
+c1 in PX jet basis:
+  U_eta         : e*(4*e**4 + 21*e**2 + 41)/(4*(e**2 + 2))
+  U_etaeta      : -(e**2 + 2)/2
+  U_etaetaeta   : -e*(e**2 + 2)**2/6
+  U_xi            : e**2 + 2
+  U_xieta         : e*(e**2 + 2)
+  U_xixi            : e**2 + 2
+
+c1 - published c1 = 0
+
+c1 in Fermi basis (route A):
+  F_t     : sqrt(2)*e*(47*e**2 + 139)/(12*(e**2 + 2)**2)
+  F_tt    : (3*e**2 - 2)/(2*(e**2 + 2))
+  F_ttt   : -sqrt(2)*e/(3*(e**2 + 2))
+  F_nn      : 1/2
+A - A_pub = 0
+B - B_pub = 0
+C_nn - 1/2 = 0
+D - D_pub = 0
+Delta at seam in Fermi basis (expect F20+F02): F02 + F20
+route B test: c1[u] (PX jets) - (A F_t + B F_tt + F_nn/2 + D F_ttt) = 0   [value 0.0489060347000448 ]
+route B test: c1[u] (PX jets) - (A F_t + B F_tt + F_nn/2 + D F_ttt) = 0   [value -0.0638932826779050 ]
+route B test: c1[u] (PX jets) - (A F_t + B F_tt + F_nn/2 + D F_ttt) = 0   [value -37.5435221095166 ]
+
+G = sqrt(2)*(3*e**4 + 31*e**2 - 25)/(4*sqrt(e**2 + 2)*(e**4 + 4*e**2 + 4))
+G - G_pub = 0 ; G(0) = -25/16
+omega*A - (omega*(B-1/2))' = e*(6*e**4 - e**2 + 19)/(12*(e**2 + 2)**(5/2))  [pub: e(6e^4-e^2+19)/(12(e^2+2)^(5/2))]
+omega*D = -e/(3*(e**2 + 2)**(3/2))

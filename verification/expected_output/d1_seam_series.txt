@@ -1,0 +1,11 @@
+Ku h^0: 0
+Ku h^1: 0
+r h^0 (must be 0): 0
+r h^1 remainder outside U-basis (must be 0): 0
+  c1[U01] = e*(4*e**4 + 21*e**2 + 41)/(4*(e**2 + 2))
+  c1[U02] = -e**2/2 - 1
+  c1[U03] = e*(-e**4 - 4*e**2 - 4)/6
+  c1[U10] = e**2 + 2
+  c1[U11] = e*(e**2 + 2)
+  c1[U20] = e**2 + 2
+elapsed 1.4s

@@ -1,0 +1,36 @@
+Part A (Lemma 2): interior Ku h^0 = 0  Ku h^1 = 0  r h^0 = 0  r h^1 = 0
+Part A: interior h^2 density r2[U] (coefficient of each jet d_xi^p d_eta^q U at (xi0,eta0)):
+   (0,1): -eta0*(25*eta0**4 - 59*eta0**2*xi0**2 - 15*eta0**2 - 14*xi0**4 - 59*xi0**2 - 40)/(8*(eta0**2 + xi0**2 + 1)**2)
+   (0,2): (6*eta0**4 + 4*eta0**2*xi0**2 + 7*eta0**2 + xi0**4 + 2*xi0**2 + 1)/(2*(eta0**2 + xi0**2 + 1))
+   (0,3): eta0*(eta0**2 + xi0**2 + 1)/3
+   (0,4): (eta0**2 + 1)*(eta0**2 + xi0**2 + 1)/12
+   (1,0): xi0*(14*eta0**4 + 59*eta0**2*xi0**2 + 59*eta0**2 - 25*xi0**4 + 15*xi0**2 + 40)/(8*(eta0**2 + xi0**2 + 1)**2)
+   (1,1): -3*eta0*xi0*(eta0**2 + xi0**2 + 2)/(4*(eta0**2 + xi0**2 + 1))
+   (1,2): xi0*(xi0**2 + 1)/2
+   (1,3): eta0*xi0*(eta0**2 + xi0**2 + 1)/3
+   (2,0): (eta0**4 + 4*eta0**2*xi0**2 + 2*eta0**2 + 6*xi0**4 + 7*xi0**2 + 1)/(2*(eta0**2 + xi0**2 + 1))
+   (2,1): eta0*(eta0**2 + 1)/2
+   (3,0): xi0*(eta0**2 + xi0**2 + 1)/3
+   (3,1): eta0*xi0*(eta0**2 + xi0**2 + 1)/3
+   (4,0): (xi0**2 + 1)*(eta0**2 + xi0**2 + 1)/12
+[Part A done in 46s]
+Step A: Euler-Lagrange expression of sqrt(g) r2 = 0
+Step B: boundary coefficients b_m(eta) multiplying d_xi^m U at xi=1:
+   m=0: -(eta**4 + 3*eta**2 - 3)/(4*(eta**2 + 2)**(7/2))
+   m=1: (2*eta**4 + 9*eta**2 + 37)/(6*(eta**2 + 2)**(5/2))
+   m=2: (eta - 1)*(eta + 1)/(6*(eta**2 + 2)**(3/2))
+   m=3: 1/(6*sqrt(eta**2 + 2))
+Step C: seam density (per d eta) after U_0 reduction, coefficients of F-jets:
+   F_     : -(e**4 + 3*e**2 - 3)/(4*(e**2 + 2)**(7/2))
+   F_t    : -sqrt(2)*e*(2*e**4 + 6*e**2 + 45)/(12*(e**2 + 2)**(7/2))
+   F_tt   : -(e**2 - 7)/(6*(e**2 + 2)**(7/2))
+   F_ttt  : sqrt(2)*e*(e**2 + 3)/(12*(e**2 + 2)**(7/2))
+   F_n     : -sqrt(2)*(2*e**4 + 5*e**2 + 44)/(12*(e**2 + 2)**3)
+   F_nt    : e*(e**2 - 7)/(6*(e**2 + 2)**3)
+   F_ntt   : -sqrt(2)*(e - 1)*(e + 1)/(12*(e**2 + 2)**3)
+   odd-in-n jets surviving on PX (they change sign on PY by the x<->y mirror and cancel in the sum): [(1, 0), (1, 1), (1, 2)]
+
+PX boundary density against f (per dt): -sqrt(2)*(3*e**4 + 31*e**2 - 25)/(8*(e**2 + 2)**(5/2))
+E_inf density = -2 * that = sqrt(2)*(3*e**4 + 31*e**2 - 25)/(4*(e**2 + 2)**(5/2))
+published G                = sqrt(2)*(3*e**4 + 31*e**2 - 25)/(4*(e**2 + 2)**(5/2))
+difference (-2*Gtilde - G_pub) = 0
