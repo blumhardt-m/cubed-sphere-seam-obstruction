@@ -13,7 +13,7 @@ For a specific second-order, conservative, Galerkin-assembled Laplace–Beltrami
 | Mathematical validity | **Proved** (exact symbolic algebra; see PROOF.md). Independently checked by a second derivation route and a second model session. |
 | Method | **Known** — standard SBP compatibility/telescoping argument (PRIOR_ART.md §1). |
 | Phenomenon | **Anticipated** — diagonal-norm "interior 2s / boundary s" barrier (PRIOR_ART.md §2). |
-| Specific result (this operator's exact seam coefficient; fixed-band obstruction in this correction class) | **Not found in examined sources; one relevant text (Shashkin–Goyman–Tolstykh 2023) not examined; search not exhaustive** (PRIOR_ART.md §3–4). |
+| Specific result (this operator's exact seam coefficient; fixed-band obstruction in this correction class) | **Not found in examined sources; Shashkin–Goyman–Tolstykh (2023) full text examined on 2026-11-01: it documents cubed-sphere boundary-order reduction and associated accuracy effects but does not derive the restricted fixed-band obstruction; search not exhaustive; novelty not established** (PRIOR_ART.md §2–4). |
 | Solution-accuracy implications | **None claimed** (LIMITATIONS.md). |
 | Publication status | Research note only. Not peer reviewed. Not submitted anywhere. |
 
@@ -48,4 +48,4 @@ Text (all Markdown files): CC BY 4.0 — see `LICENSE`. Code (`verification/`): 
 
 ## Citation
 
-Michael Blumhardt, "A fixed-band seam obstruction for a cubed-sphere Laplacian", research note, 2026. https://github.com/blumhardt-m/cubed-sphere-seam-obstruction, tag v1.0.0.
+Michael Blumhardt, "A fixed-band seam obstruction for a cubed-sphere Laplacian", research note, 2026. https://github.com/blumhardt-m/cubed-sphere-seam-obstruction, tag v1.0.1.

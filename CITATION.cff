@@ -5,7 +5,7 @@ title: "A fixed-band seam obstruction for a cubed-sphere Laplacian"
 authors:
   - family-names: Blumhardt
     given-names: Michael
-version: v1.0.0
-date-released: 2026-10-31
+version: 1.0.1
+date-released: 2026-11-01
 repository-code: "https://github.com/blumhardt-m/cubed-sphere-seam-obstruction"
 abstract: "Provisional research note: exact seam truncation coefficient and a fixed-band obstruction theorem for a conservative Galerkin-assembled Laplace–Beltrami discretization on the gnomonic cubed sphere, with symbolic verification scripts. Novelty not established; not peer reviewed."

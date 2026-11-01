@@ -103,7 +103,7 @@ Vanishing of F is necessary for a fixed-band correction to reach o(h); it is not
 
 ## 7. Proof of the theorem
 
-1. **Mass term.** Band nodes in supp u lie within normal distance n ≤ kh/√2 of the seam, inside the ρ-plateau for small h, where |Δu| ≤ c n² ≤ c′(k+1)²h²; Δu = 0 outside supp u. With |δW| ≤ C W and Σ_{B_k ∩ supp} W = O(kh), the term h⁻² Σ δW Δu is O(h).
+1. **Mass term.** Band nodes in supp u lie within normal distance n ≤ kh/√2 of the seam, inside the ρ-plateau for small h, where |Δu| ≤ c n² ≤ c′(k+1)²h²; Δu = 0 outside supp u. With |δW| ≤ C W and Σ_{B_k ∩ supp} W = O((k+1)h), the term h⁻² Σ δW Δu is O(h).
 2. **Band mass bound.** √g ≤ 1 and alias weights sum to at most 1, so W_j ≤ h². B_k has at most 12(2k+1)n nodes, and n = 2/h + 1 ≤ 3/h for h ≤ 1. Hence Σ_{B_k} |W′| ≤ (1+C)·12(2k+1)·(3/h)·h² = 36(1+C)(2k+1) h.
 3. **Variant (C).** By Lemma 1 (C) and step 1, |E_k(u_A) − O(h)| = h⁻²|Σ_{B_k} W′ r′(u_A)| ≤ h⁻² max_{B_k}|r′(u_A)| · 36(1+C)(2k+1) h. Lemma 4 gives E_k(u_A) → E_∞(u_A) ≠ 0 (Lemma 5), which is (i).
 4. **Variant (S).** The same with Lemma 1 (S): |Σ W′[v r′(u_A) − u_A r′(v)]| ≤ M (max|r′(u_A)| + max|r′(v)|) Σ|W′|; the mass term is O(h) as in step 1 with |u_A|, |v| ≤ M; and S_k(u_A, v) → E_∞(u_A) ≠ 0, which is (ii).

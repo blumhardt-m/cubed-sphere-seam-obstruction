@@ -43,9 +43,11 @@ The PX|PY seam is the great circle x = y. Fermi coordinates about it: ν = (1,�
 
 **Witness class U₀:** smooth u on S² with compact support inside Ω = {x > 0, y > 0, |z| < min(x,y)} (the PX and PY charts across their common open seam, away from all other seams and vertices) such that Δu = 0 and ∂ₙΔu = 0 on the seam.
 
-**Construction:** for f ∈ C_c^∞(|t| < 0.6155) and a C^∞ cutoff ρ(n) equal to 1 for |n| ≤ 0.12 and 0 for |n| ≥ 0.20,
+**Construction:** for f ∈ C_c^∞(|t| < 0.45) and a C^∞ cutoff ρ(n) equal to 1 for |n| ≤ 0.12 and 0 for |n| ≥ 0.20,
 
-  u_f = [f(t) − ½ n² f″(t)] ρ(n),   so that Δu_f = n²(2f″ − ½f⁗) + O(n⁴) on the plateau.
+  u_f = [f(t) − ½ n² f″(t)] ρ(n),   so that Δu_f = n²(2f″ − ½f⁗) + O(n⁴) on the plateau |n| ≤ 0.12.
+
+With this fixed normal cutoff, the tangential restriction |t| < 0.45 is a verified sufficient condition for supp u_f ⊂ Ω (PROOF.md, Lemma 5): Ω narrows to zero normal width at the two ends of the seam segment (the cube vertices), and the strip |n| ≤ 0.20 is no longer contained in Ω by |t| = 0.5. For f supported closer to an endpoint the cutoff width would have to shrink accordingly; no such f is used here. (v1.0.0 stated the construction for |t| < 0.6155, which is not uniformly admissible with this cutoff; see CHANGELOG.md.)
 
 **Specific witnesses:**
 - u_A = u_f with f = ψ_A(t) = β(t/0.42), β(s) = exp(1 − 1/(1−s²)) for |s| < 1 (zero otherwise);
